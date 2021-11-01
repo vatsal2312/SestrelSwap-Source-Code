@@ -1,0 +1,599 @@
+/*--||
+Common Use Start
+||--*/
+*
+{
+    box-sizing: border-box;
+}
+:root
+{
+	--primary-font: 'Poppins', sans-serif;	
+	--gr-green: linear-gradient( 0deg, rgb(17,85,18) 0%, rgb(14,49,39) 22%, rgb(10,13,59) 100%);
+    --gr-red: linear-gradient( 0deg, rgb(99,35,38) 0%, rgb(55,24,49) 5%, rgb(10,13,59) 100%);
+}
+img
+{
+	max-width: 100%;
+}
+body
+{
+	font-family: var(--primary-font);
+	background-color: #020427;
+	font-size: 16px;
+	font-weight: 400;
+	color: #ffffff;	
+}
+@media only screen and (min-width: 1200px)
+{
+	.container
+	{
+		max-width: 1170px;
+		width: auto;		
+	}
+}
+
+/*--||
+Common Use End
+||--*/
+
+
+.inPgBg
+{
+	background-image: url('../images/bgs/spBg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* -- -- -- -- - Header Start -- -- -- -- - */
+.headerInr {
+    border-bottom: 1px solid rgba(205, 234, 248,0.18);
+    padding: 0.5px 0;
+}
+
+
+.btn-15738 {
+    font-size: 13px;
+    min-width: 157px;
+    padding-top: 8.29px;
+    padding-bottom: 8.29px;
+	border-radius: 3px;
+}
+
+
+.btn-blueGr {
+    background-image: linear-gradient( 0deg, rgb(53,58,133) 0%, rgb(32,36,96) 49%, rgb(10,13,59) 100%);
+    color: #ffffff;
+    border-top-color: #0d1040;
+}
+.btn-blueGr:hover 
+{
+    background-image: linear-gradient( 180deg, rgb(53,58,133) 0%, rgb(32,36,96) 49%, rgb(10,13,59) 100%);
+    border-bottom-color: #0d1040;
+    color: #ffffff;
+}
+.btn-blueGr:focus
+{
+    box-shadow: none;
+}
+.btnIc {
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btnTx {
+    display: inline-block;
+    vertical-align: middle;
+	font-weight: 500;
+    line-height: normal;
+}
+
+
+.btn-yellow
+{
+	background-color: #fbcd01;
+	color: #010101;
+    text-shadow: 0 0 #010101;
+}
+.btn-yellow:hover {
+    background-color: #e3b900;
+}
+
+@media only screen and (min-width: 371px)
+{
+	.logoObr {
+		display: none;
+	}
+}
+@media only screen and (max-width: 370px)
+{
+	.logoWtx {
+		display: none;
+	}
+}
+/* -- -- -- -- - Header End -- -- -- -- - */
+
+
+
+/* -- -- -- -- - Inner Page Content start -- -- -- -- - */
+.pgFlInr {
+    min-height: calc(100vh - 54px - 66px);
+	padding: 2rem 0;
+}
+/* -- -- -- -- - Inner Page Content End -- -- -- -- - */
+
+
+
+/* -- -- -- -- - Swap Page Content Start -- -- -- -- - */
+.spCont {
+    max-width: 405px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.swapTab
+{
+    margin-bottom: 14px;
+    border-radius: 8px;
+    background-color: #0c1d37;
+    box-shadow: 0px 2px 16.38px 1.62px rgba(0, 0, 0, 0.3);
+}
+.swapTab .nav-item 
+{
+    flex: 1 1 0;
+    text-align: center;
+}
+.swapTab .nav-item .nav-link
+{
+    font-size: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 8px;
+}
+
+.swapTab .nav-item .nav-link.swapBuy
+{
+    color: #ffffff;   
+}
+.swapTab .nav-item .nav-link.swapSell
+{
+    color: #ffffff;   
+}
+.swapTab .nav-item .nav-link.swapBuy.active
+{
+    background-color: #fbcd01;
+	color: #000000;
+}
+.swapTab .nav-item .nav-link.swapSell.active
+{
+    background-color: #fbcd01;
+	color: #000000;
+}
+
+.swapTab .navBtnIc
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0px;
+    font-size: 0px;
+    min-width: 39px;
+    line-height: 39px;
+    border-radius: inherit;
+}
+.swapTab .nav-item .nav-link:not(.active).swapBuy .navBtnIc
+{
+    background-image: var(--gr-green);
+	background-image: none;
+}
+.swapTab .nav-item .nav-link:not(.active).swapSell .navBtnIc
+{
+    background-image: var(--gr-red);
+	background-image: none;
+}
+.swapTab .nav-item .nav-link:not(.active) .navBtnIc img
+{
+	filter: invert(1) brightness(20);
+}
+.swapTab  .navBtnTx 
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+
+.swapBsCon {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.04);
+    color: #2d2d2d;
+    padding: 1rem 1.25rem;
+}
+
+
+
+.bsConHd 
+{
+    padding: 12px 0;
+}
+.bsConHdLt
+{
+    padding-bottom: 8px;
+}
+.bsConHdLt h5
+{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    margin: 0 0 2px;
+	text-shadow: 0 0 black;
+}
+.bsConHdLt p
+{
+    color: #2d2d2d;
+    font-size: 14px;
+    margin: 0;
+}
+
+.bsConHdRt
+{
+    padding-bottom: 8px;
+}
+
+
+.bsConFt
+{    
+    border: 1px solid rgb(237, 237, 237);
+    border-radius: 17px;
+    background-color: rgb(250, 250, 250);
+    padding: 0.5rem 1.5rem;
+}
+.bsConFtFm {
+    margin-bottom: 2.25rem;
+}
+.bsConFtTo {
+    margin-bottom: 1.125rem;
+}
+.bsConFtRow 
+{
+    margin-right: -6px;
+    margin-left: -6px;
+}
+.bsConFtCol
+{
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.bsConFtWh
+{
+    font-size: 16px;
+    color: #393939;
+	font-weight: 500;
+}
+
+.bsConFtTkn 
+{
+	
+}
+.bsConCnIg 
+{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0px;
+    margin-right: 6px;
+}
+.bsConCnIg img
+{
+    width: 22px;
+    height: 22px;
+}
+.bsConCnTx
+{
+    display: inline-block;
+    vertical-align: middle;
+    color: #2d2d2d;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.bsConFtColIpt
+{
+	flex: 1 1 0;
+}
+
+.bsConIpt
+{
+    height: auto;
+    background-color: transparent;
+    border: 0px;
+    padding: 0;
+    font-weight: 500;
+    border-radius: 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.bsConIpt:focus
+{
+    box-shadow: none;
+    background-color: transparent;
+    border-color: #020427;
+}
+
+.bsConIpt::placeholder
+{
+    color: #565a69;
+    font-weight: normal;
+}
+
+
+
+.bsConFtAmt 
+{
+    font-size: 14px;
+    color: #565a69;
+}
+
+.bsConFtBal 
+{
+    font-size: 14px;
+    color: #686868;
+}
+
+
+.bsFrmSbm {
+    padding: 1.75rem 0px 0;
+}
+
+
+.btn-18042 
+{
+    min-width: 180px;
+    font-size: 14px;
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+    border-radius: 5px;
+}
+.btn-violet
+{
+    background-color: #020427;
+    color: #ffffff;
+    font-weight: 500;
+}
+.btn-violet:hover
+{
+    background-color: #040851;
+    color: #ffffff;
+}
+@media only screen and (max-width: 400px)
+{
+	.bsConFtColIpt {
+		width: 100%;
+	}
+	.bsConFt
+	{
+		padding: 0.5rem 1rem;
+	}
+}
+/* -- -- -- -- - Swap Page Content End -- -- -- -- - */
+
+
+
+/* -- -- -- -- - Footer Start -- -- -- -- - */
+.inrFt {
+    border-top: 1px solid rgba(205, 234, 248,0.18);
+}
+.cpyRt {
+    font-size: 14px;
+	font-weight: 500;
+}
+/* -- -- -- -- - Footer End -- -- -- -- - */
+
+
+
+
+/* -- -- -- -- - Wallet Connect Start -- -- -- -- - */
+.modalWal
+{
+    
+}
+
+.modalWal .modal-content {
+    border-radius: 8px;
+	background-color: #0b0128;
+}
+
+.modalWal .modal-header {
+    border: 0px;
+}
+
+.modalWal  .modal-title {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.modalWal  .close {
+    position: absolute;
+    top: 22px;
+    right: 24px;
+    text-shadow: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 1;
+	outline: 0px;
+}
+
+.walCont {
+	padding-bottom: 0.75rem;
+}
+
+.walConBtnRow {
+	
+}
+
+.walConBtn {
+    min-width: 172px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin: 25px 15px;
+	transition: 0.5s;
+}
+.walConBtn:hover
+{
+	border-color: rgba(255, 255, 255,0.18);
+}
+
+.walConIg {
+    font-size: 0px;
+    line-height: 73px;
+    margin-bottom: 18px;
+    margin-top: 14px;
+}
+
+.walConTx {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.modal-backdrop.show {
+    opacity: 0.7;
+}
+
+
+@media only screen and (min-width: 768px)
+{
+	.modalWal  .modal-dialog 
+	{
+		max-width: 650px;
+	}
+}
+@media only screen and (min-width: 992px)
+{
+	.modalWal  .modal-dialog 
+	{
+		max-width: 842px;
+	}
+}
+@media only screen and (max-width: 767px)
+{
+	.walConBtn
+	{
+		min-width: 150px;
+		margin: 15px 15px;
+	}
+
+	.walConIg
+	{
+		line-height: 50px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.walConIg img
+	{
+		max-width: 44px;
+	}
+
+	.walConTx 
+	{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 480px)
+{
+	.modalWal .modal-title
+	{
+		padding-top: 0rem;
+	}
+	.modalWal .close
+	{
+		top: 14px;
+		right: 14px;
+	}
+}
+@media only screen and (max-width: 400px)
+{
+	.walConIg 
+	{
+		margin-bottom: 4px;
+		margin-top: 4px;
+		line-height: 42px;
+	}
+
+	.walConIg img 
+	{
+		max-width: 36px;
+	}
+
+	.walConBtn 
+	{
+		min-width: 140px;
+		margin: 6px 6px;
+	}
+}
+/* -- -- -- -- - Wallet Connect End -- -- -- -- - */
+
+
+/* -- -- -- -- - Transactions History Connect Start -- -- -- -- - */
+.modalRecHis
+{
+
+}
+
+.modalRecHis .modal-content 
+{
+    border-radius: 8px;
+    background-color: #0b0128;
+    padding-left: 0.5rem;
+}
+
+.modalRecHis .modal-header 
+{
+    border: 0px;
+}
+
+.modalRecHis .modal-title
+{
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 0.75rem;
+}
+
+.modalRecHis .close
+{
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: none;
+    opacity: 1;
+    font-weight: normal;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    outline: 0px;
+}
+
+.hisCont p
+{
+    font-size: 16px;
+	color: #fbcd01;
+}
+@media only screen and (max-width: 480px)
+{
+	.modalRecHis .modal-title
+	{
+		padding-top: 0px;
+	}
+	.hisCont p {
+		font-size: 14px;
+	}
+}
+/* -- -- -- -- - Transactions History Connect End -- -- -- -- - */
